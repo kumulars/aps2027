@@ -3,19 +3,92 @@
 
 {% block body_class %}template-homepage{% endblock %}
 
-{% block extra_css %}
-
-{% comment %}
-Delete the line below if you're just getting started and want to remove the welcome screen!
-{% endcomment %}
-<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
-{% endblock extra_css %}
-
 {% block content %}
+<!-- Hero Banner -->
+<header class="hero-banner">
+    <img src="/media/original_images/banner_5_0.jpg" alt="30th American Peptide Symposium Banner" class="img-fluid">
+</header>
 
-{% comment %}
-Delete the line below if you're just getting started and want to remove the welcome screen!
-{% endcomment %}
-{% include 'home/welcome_page.html' %}
+<!-- Introduction Section -->
+    <div class="container">
+        <div class="col-md-12">
+        <h1 class="primary-header mb-4">30th American Peptide Symposium</h1>
+        <h2 class="slogan-header mb-4"><em>Peptide Revolution: Connecting Chemistry, Biology, and Beyond</em></h2>
+        <p class="intro">The American Peptide Society invites you to Boston, Massachusetts, for the 30th American Peptide Symposium, June 20–24, 2027. Under the theme <b><em>Peptide Revolution: Connecting Chemistry, Biology, and Beyond</em></b>, this milestone gathering will explore the transformative role peptides play across disciplines, from therapeutic innovation to materials science and beyond.</p>
+        <p class="intro">The historic city of Boston, a vibrant hub of academic excellence and biotechnology, provides an ideal setting for advancing our understanding of peptide chemistry and its far-reaching applications. Conference Co-Chairs Professor Krishna Kumar of Tufts University and Dr. Florence Brunel of Novo Nordisk are assembling a dynamic program that promises stimulating science, meaningful collaboration, and lasting connections.</p>
+        <p class="intro">We look forward to welcoming researchers, clinicians, and industry leaders from around the world. Mark your calendars, re-visit this site for updates, and join us for this landmark symposium!</p>
+    </div>
+</div>
 
+
+<!-- Co-Chairs Section -->
+<div class="container">
+    <hr class="border27">
+    <div class="row mb-5">
+        <div class="col-md-12">
+        <h2 class="secondary-header mt-4 mb-5">Conference Co-Chairs</h2>
+        </div>
+        <div class="col-md-6">
+                <img src="/media/original_images/kumar_krishna.jpg" alt="Professor Krishna Kumar" class="co-chair-img img-fluid rounded">
+                <h3 class="co-chair-header mt-3">Krishna Kumar, PhD</h3>
+                <p><b>Co-Chair, 30th American Peptide Symposium</b></p>
+                <p>Professor Krishna Kumar holds the Robinson Professorship in Chemistry at Tufts University, where he also serves as Adjunct Professor of Biomedical Engineering and is a member of the Cancer Center at Tufts Medical Center. He currently serves as Secretary of the American Peptide Society.</p>
+                <p>Dr. Kumar earned his PhD from Brown University in 1996 and conducted postdoctoral research at The Scripps Research Institute with M. Reza Ghadiri before joining Tufts in 1998. His research operates at the interface of chemistry, biology, and medicine, with current interests spanning therapeutic peptide design for diabetes, cancer, and neurodegenerative diseases, as well as novel approaches to combating antibiotic resistance.</p>
+                <p>His honors include the MIT Technology Review TR35 Award, the NSF CAREER Award, and the 2023 Rao Makineni Lectureship. He is a Fellow of the American Association for the Advancement of Science and the Royal Society of Chemistry.</p>
+            </div>
+           <div class="col-md-6">
+                <img src="/media/original_images/brunel_florence_nov_23.jpg" alt="Dr. Florence Brunel" class="co-chair-img img-fluid rounded">
+                <h3 class="co-chair-header mt-3">Florence Brunel, PhD</h3>
+                <p><b>Co-Chair, 30th American Peptide Symposium</b></p>
+                <p>Dr. Florence Brunel is Senior Principal Scientist at Novo Nordisk Research Center in Indianapolis, where her research focuses on peptide therapeutics for metabolic diseases including diabetes and obesity. She earned her PhD in 2003 from the University of Louisville under Arno F. Spatola and her MS from the École Nationale Supérieure de Chimie de Montpellier.</p>
+                <p>Prior to Novo Nordisk, Dr. Brunel held positions at Vertex Pharmaceuticals, Pfizer, Amylin Pharmaceuticals, and The Scripps Research Institute. Her contributions to the field have been recognized with honors including the Pfizer Individual Performance Award and fellowships from AmFAR and the California HIV/AIDS Research Program.</p>
+                <p>A long-standing member of the American Peptide Society, she has served as Councilor, Nominating Committee Chair, and on the Organizing Committee for the 26th American Peptide Symposium in Monterey.</p>
+            </div>
+        </div>
+</div>
+
+
+<!-- Venue Section -->
+<section id="venue">
+    <div class="container">
+        <h2 class="secondary-header mb-4">Conference Venue</h2>
+        <h3 class="tertiary-header mb-3">Sheraton Boston Hotel</h3>
+        <p>A familiar landmark in Boston's historic Back Bay, Sheraton Boston Hotel has long been the city's most exceptional gathering place. Now fully transformed, the hotel blends Sheraton's timeless hospitality with a fresh, modern design for today's traveler. The reimagined lobby welcomes guests into a vibrant social space anchored by Henderson at Sheraton Boston, a new dining and bar destination to unwind and connect.</p>
+        <p>Guest rooms have been rebuilt for comfort and productivity, featuring sit to stand desks, sweeping views, and premium amenities. Relax in one of Boston's largest lap pools, with a seasonal retractable roof and stunning views of the city skyline, or recharge in the expansive fitness center.</p>
+        <p class="mb-5">Connected to the Prudential Center and Hynes Convention Center, the hotel features 70,000 square feet of versatile event space. Moments from Fenway Park and Newbury Street, Sheraton Boston Hotel continues to foster meaningful connections between guests and the city.</p>
+
+        <!-- Venue Gallery -->
+        <div class="venue-gallery">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="/media/original_images/sheraton_exterioir_1.jpg" alt="Sheraton Boston Exterior" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4">
+                    <img src="/media/original_images/sheraton_interior_conference_lobby.jpg" alt="Conference Lobby" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4">
+                    <img src="/media/original_images/sheraton_interior_conference_lobby_2.jpg" alt="Conference Lobby" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4">
+                    <img src="/media/original_images/sheraton_interior_conference_hall.jpg" alt="Conference Hall" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4">
+                    <img src="/media/original_images/sheraton_interior_conferece_room_1.jpg" alt="Conference Room" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4">
+                    <img src="/media/original_images/sheraton_interior_conference_desk.jpg" alt="Conference Desk" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4">
+                    <img src="/media/original_images/sheraton_interior_guest_room_1.jpg" alt="Guest Room" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4">
+                    <img src="/media/original_images/sheraton_interior_guest_suite_1.jpg" alt="Guest Suite" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4">
+                    <img src="/media/original_images/sheraton_interior_pool_1.jpg" alt="Pool" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock content %}
