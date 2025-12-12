@@ -151,10 +151,9 @@ h1.primary-header {
 
 
 .tertiary-header {
-    font-weight: 400;
-    color: #3A53A4;
-    margin-bottom: 9px!important;
-    font-size: clamp(1em, 1vw + 1em, 3em);
+    font-weight: 600;
+    color: #FFA800;
+    font-size: 1.9em;
     line-height: 1em;
 }
 
